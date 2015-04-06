@@ -1,5 +1,9 @@
 Originally documented here: https://gist.github.com/JogoShugh/ada9223272432ab6aea8
 
+TODO: update the script to automate this.
+
+After running the scripts as is, we did the following manually to get the cluster working with the load balancer in Azure:
+
 * Deleted port 2113 from Node 1 in Azure
 * Added a new port of 2113 on Node 1, making it a Balanced Set named ESClust
 * For nodes 2 and 3, added this same balanced set port, resulting in all three nodes have port 2113
